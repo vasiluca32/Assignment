@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px 0px 30px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    padding-left: 14px;
+    padding-right: 37px;
+    background-color: #d3d3d3;
+    background: linear-gradient(172.4deg, #f7f7f7 76%, rgb(255, 255, 255) 76%);
+}
+
+
+.text-content {
+    width: 50%;
+    padding: 0px 80px 0px 40px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.button {
+    margin-top: 10px;
+    font-size: 22px;
+    color: white;
+    background-color: #e93e3e;
+    border-color: #e93e3e;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 300px;
+    border: none;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.image {
+    width: 600px;
+    border-radius: 12px;
+    margin-top: 36px;
+    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 20%), 9px 6px 14px 0 rgb(0 0 0 / 19%);
+}
+
+.image:hover {
+    opacity: 0.5;
+}
+
+.sticky-button {
+    position: fixed;
+    top: 10px;
+
+}
+
+.text-content-2 {
+    padding: 80px;
+}
+
+
+@media only screen and (max-width: 1350px) {
+
+    .image {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-content {
+        width: 90%;
+        padding: 0px 80px 0px 40px;
+    }
+
+    .image {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        margin: 30px 15px 0px 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 14px;
+        padding-right: 37px;
+    }
+
+    .text-content {
+        width: 90%;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .image {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .container {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .text-content-2 {
+        padding: 0px 10px 0px 10px;
+    }
+}
